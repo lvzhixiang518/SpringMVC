@@ -15,7 +15,7 @@ public class FileController {
 
     @RequestMapping("/upload")
     public String fileUpload(@RequestParam("file")CommonsMultipartFile file, HttpServletRequest request) throws IOException {
-        //为什么第一次提交失败？
+        //为什么第一次提交失败
         //获取文件名：file.getOriginalFileName
         String uploadFileName = file.getOriginalFilename();
         //如果文件名为空，直接回到首页
